@@ -1,0 +1,124 @@
+<?php session_start(); ?>
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {font-family: Arial, Helvetica, sans-serif;}
+form {border: 3px solid #f1f1f1;}
+
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+button {
+  background-color: #61a5c2;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+.cancelbtn {
+  width: auto;
+  padding: 10px 18px;
+  background-color: #f44336;
+}
+
+.imgcontainer {
+  text-align: center;
+  margin: 24px 0 12px 0;
+}
+
+img.avatar {
+  width: 20%;
+  border-radius: 30%;
+}
+
+.container {
+  padding: 16px;
+}
+
+span.psw {
+  float: right;
+  padding-top: 16px;
+}
+select {
+  width: 100%;
+  padding: 16px 20px;
+  border: none;
+  border-radius: 4px;
+  background-color: #f1f1f1;
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+  span.psw {
+     display: block;
+     float: none;
+  }
+}
+</style>
+</head>
+<body>
+
+<h2>DOCTOR FORM</h2>
+<div class="imgcontainer">
+  <img src="doctor1.jpg" alt="Avatar" class="avatar">
+</div>
+
+
+<form action="appointment.html" method="post">
+  <div class="container">
+   <label for ="symptom"><b>Please Select your symptoms</b></label>
+   <input type="checkbox" id="symptom" name="symptom" value="cold">
+   <label for = "cold">Cold</label>
+   <input type="checkbox" id="symptom" name="symptom" value="cough">
+   <label for = "cold">Cough</label>
+   <input type="checkbox" id="symptom" name="symptom" value="fever">
+   <label for = "fever">Fever</label>
+   <input type="checkbox" id="symptom" name="symptom" value="Headache">
+   <label for = "Headache">Headache</label>
+   <input type="checkbox" id="symptom" name="symptom" value="Stomach pain">
+   <label for = "Stomach pain">Stomach Pain</label>
+   <input type="checkbox" id="symptom" name="symptom" value="other">
+   <label for = "other">Other</label><br>
+   <p>
+
+   </p>
+   <label for="fname"><b> Specify if Other</b></label>
+   <input type="text" id="fname" placeholder="Enter your symptoms here" name="fname">
+   <label for="doctors"><b>Choose a DOCTOR:</b></label>
+    <select id="doctors" name="doctors">
+     <option value="venu">DR.S.VENUMADHAV - PEDIATRICIAN</option>
+     <option value="sunitha">DR.S.SUNITHA - GYNAECOLOGIST</option>
+     <option value="sandhya">DR.S.SANDHYA RANI - PATHOLOGIST</option>
+     <option value="sushma">DR.M.SUSHMA - NEURO PHYSICIAN</option>
+    </select>
+    <p>
+
+    </p>
+    <label for="time"><b>Choose a TIME SLOT:</b></label>
+    <input type="radio" id="time" name="time" value="M">
+    <label for="M">9AM - 10AM</label>
+    <input type="radio" id="time" name="time" value="N">
+    <label for="F">10AM - 12 PM</label>
+    <input type="radio" id="gender" name="time" value="O">
+    <label for="O">12PM - 2PM</label>
+        
+    <button type="submit">Proceed</button>
+</form>
+
+</body>
+</html>

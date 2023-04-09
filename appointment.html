@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style> 
+input[type=text] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: none;
+  border-bottom: 2px solid #03d3fc;
+}
+
+.imgcontainer {
+  text-align: center;
+  margin: 24px 0 12px 0;
+}
+
+img.avatar {
+  width: 20%;
+  border-radius: 30%;
+}
+select {
+  width: 100%;
+  padding: 16px 20px;
+  border: none;
+  border-radius: 4px;
+  background-color: #f1f1f1;
+}
+.button {
+  background-color: #03d3fc;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+</style>
+</head>
+<body>
+
+<h2>Feedback</h2>
+
+<form action="mini.html" method="post">
+  <div class="imgcontainer">
+    <img src="feedback.jpg" alt="Avatar" class="avatar">
+  </div>
+  <label for ="Feedback"><b>Please Select how you felt</b></label>
+  <input type="checkbox" id="Feedback" name="Feedback" value="Excellent">
+  <label for = "Excellent">Excellent</label>
+  <input type="checkbox" id="Feedback" name="Feedback" value="Very Good">
+  <label for = "Very Good">Very Good</label>
+  <input type="checkbox" id="Feedback" name="Feedback" value="Satisfactory">
+  <label for = "fever">Satisfactory</label>
+  <input type="checkbox" id="Feedback" name="Feedback" value="Unsatisfactory">
+  <label for = "Unsatisfactory">Unsatisfactory</label><br>
+  <p>
+
+  </p>
+  <label for="visit"><b>Please select if this is your first visit</b></label>
+  <input type="radio" id="visit" name="visit" value="Y">
+  <label for="Y">Yes</label>
+  <input type="radio" id="visit" name="visit" value="N">
+  <label for="N">No</label>
+  <p>
+
+  </p>
+  <label for="fname">Comments any</label>
+  <input type="text" id="fname" placeholder="Help us improve" name="fname">
+  <input type="submit" class="button" name="submit" value="submit">
+</form>
+</body>
+</html>
